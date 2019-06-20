@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import StarRating from "./components/ui/StarRating";
+import Color from "./components/ui/Color";
+import ColorList from "./components/ui/ColorList";
+import SortMenu from "./components/ui/SortMenu";
+import AddColorForm from "./components/ui/AddColorForm";
 
-function App() {
+const App = ({ store }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <SortMenu />
+      <AddColorForm />
+      <ColorList />
     </div>
   );
-}
+};
 
 export default App;
