@@ -7,7 +7,12 @@ import storeFactory from "./store/index";
 
 const store = storeFactory();
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const render = () => {
+  ReactDOM.render(<App />, document.getElementById("root"));
+};
+
+store.subscribe(render);
+render();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
