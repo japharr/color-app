@@ -20,5 +20,5 @@ export const addColor = (title, color) => ({
   title,
   color,
   rating: 0,
-  timestamp: new Date().getTime
+  timestamp: new Date().toString()
 });
