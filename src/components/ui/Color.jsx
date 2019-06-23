@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import StarRating from "./StarRating";
 import TimeAgo from "./TimeAgo";
 
