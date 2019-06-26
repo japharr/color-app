@@ -1,11 +1,12 @@
 import React from "react";
 
-const Student = ({ name, age }) => {
+const Student = ({ name, age, onDelete = f => f }) => {
   return (
     <div>
       <dl className="dl-horizontal jh-entity-details">
         <dt>
-          <span />Name
+          <span />
+          Name
         </dt>
         <dd>
           <span>{name}</span>
@@ -17,6 +18,7 @@ const Student = ({ name, age }) => {
           <span>{age}</span>
         </dd>
       </dl>
+      <button onClick={onDelete}>Delete</button>
     </div>
   );
 };
